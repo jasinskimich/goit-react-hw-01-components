@@ -6,21 +6,11 @@ import { FriendList } from './FriendList/FriendList';
 import friends from '../data/friends.json';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
 import transactions from '../data/transactions.json';
+import css from './App/App.module.css'
 
 export const App = () => {
   return (
-    <div
-      style={{
-        margin: 5,
-        display: 'flex',
-        flexDirection: 'column',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101',
-        gap: 40,
-      }}
-    >
+    <div className={css['box']}>
       <Profile
         username={user.username}
         tag={user.tag}
